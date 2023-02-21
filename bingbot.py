@@ -4,14 +4,17 @@ import re
 from EdgeGPT import Chatbot
 from telebot.async_telebot import AsyncTeleBot
 
-BOT_TOKEN = '5946033340:AAEwlYwztf2CFL-b3wTZZTBO7e3s4CKGWNo'
+# Insert your Bot token
+BOT_TOKEN = '<INSERT YOUR TELEGRAM BOT TOKEN>'
 bot = AsyncTeleBot(BOT_TOKEN)
-authorized_id = ['amazingPaddy', 'Umagopal36']
+
+# Add your telegram id to the list without @ symbol
+authorized_id = ['amazingPaddy']
 
 
 async def bingChat(prompt, is_ref=False):
-    bot = Chatbot(cookiePath='./cookies.json')
-    response_dict = await bot.ask(prompt=prompt)
+    gbot = Chatbot(cookiePath='./cookies.json')
+    response_dict = await gbot.ask(prompt=prompt)
     if is_ref:
         return response_dict['item']['messages'][1]["adaptiveCards"][0]["body"][0]["text"]
     return re.sub(r'\[\^\d\^\]', '', response_dict['item']['messages'][1]['text'])
@@ -25,7 +28,7 @@ async def ask(message, is_ref=False):
             await bot.reply_to(message, "Not authorized to use this bot")
             return
         prompt = message.text.replace("/ask", "")
-        print(f"Request received from {username} - {message.text} - {prompt}")
+        print(f"Request received from {username} - {message.text}")
         if not prompt:
             await bot.reply_to(message, "Empty query sent. Add your query /ask <message>")
         else:
