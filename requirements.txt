@@ -1,0 +1,3 @@
+asyncio~=3.4.3
+telebot~=0.0.5
+edgegpt~=0.0.51
