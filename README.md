@@ -3,7 +3,7 @@ This is a telegram bot which uses EdgeGPT to post queries and get the response. 
 Credit goes to the developers of [EdgeGPT](https://github.com/acheong08/EdgeGPT), who ingeniously reverse-engineered Bing Chat using browser cookies.
 
 
-# Steps to have your own telegram bot
+# Steps to have your own telegram bing chat bot
 
 ## Prerequisites:
 * Accessible to Bing chat (If you are in waiting list, this bot may not work)
