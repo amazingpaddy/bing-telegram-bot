@@ -2,15 +2,19 @@ This is a telegram bot which uses EdgeGPT to post queries and get the response. 
 
 Credit goes to the developers of [EdgeGPT](https://github.com/acheong08/EdgeGPT), who ingeniously reverse-engineered Bing Chat using browser cookies.
 
-
-# Steps to have your own telegram bing chat bot
-
 ## Prerequisites:
 * Accessible to Bing chat (If you are in waiting list, this bot may not work)
 * Telegram App (latest version)
 * Python 3.11
 * Any IDE - VSCODE or PyCharm (Optional)
 * Edge browser - As of now bing chat only works in Edge browser. But there are extensions available to enable the chat in other browser as well.
+
+## What is working and not working
+* No limits in how many requests you send. You can chat with bing as long as you want.
+* option to choose to get response with or without reference links.
+* **bot cannot remember the previous conversations, so you may not get proper response for the follow up questions.**
+
+## Steps to have your own bing chatbot.
 
 ### step 1:
 
