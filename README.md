@@ -1,9 +1,6 @@
-This is a telegram bot which uses EdgeGPT to post queries and get the response. This bot cannot be shared publicly since its uses your browser cookies to authenticate you as bing needs you to be logged in. 
+This is a telegram bot which uses EdgeGPT to post queries and get the response. **This bot cannot be shared publicly since its uses your browser cookies to authenticate you as bing needs you to be logged in**. So you should have your own bot using own browser cookie. 
 
 Credit goes to the developers of [EdgeGPT](https://github.com/acheong08/EdgeGPT), who ingeniously reverse-engineered Bing Chat using browser cookies.
-
-
-# Steps to have your own telegram bot
 
 ## Prerequisites:
 * Accessible to Bing chat (If you are in waiting list, this bot may not work)
@@ -11,6 +8,14 @@ Credit goes to the developers of [EdgeGPT](https://github.com/acheong08/EdgeGPT)
 * Python 3.11
 * Any IDE - VSCODE or PyCharm (Optional)
 * Edge browser - As of now bing chat only works in Edge browser. But there are extensions available to enable the chat in other browser as well.
+
+## What is working and not working
+* No limits in how many requests you send. You can chat with bing as long as you want.
+* option to choose to get response with or without reference links.
+* **bot cannot remember the previous conversations, so you may not get proper response for the follow up questions.**
+* if you get `IndexOutofBoundException`, restart your python script. If is still not working, export the cookies again and update the cookie.json file.
+
+## Steps to have your own bing chatbot.
 
 ### step 1:
 
@@ -22,6 +27,9 @@ Clone or download this code to a any directory.
 install EdgeGPT package
 
 **`python3 -m pip install EdgeGPT --upgrade`**
+
+**`pip install pyTelegramBotAPI`**
+
 ### step 3:
 install [Cookie Editor](https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm) extension in Edge browser.
 
