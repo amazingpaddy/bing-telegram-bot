@@ -1,4 +1,4 @@
-This is a telegram bot which uses EdgeGPT to post queries and get the response. **This bot cannot be shared publicly since its uses your browser cookies to authenticate you as bing needs you to be logged in**. So you should have your own bot with your own browser cookie. 
+This is a telegram bot which uses EdgeGPT to post queries and get the response. **This bot cannot be shared publicly since its uses your browser cookies to authenticate you as bing needs you to be logged in**. So you should have your own bot using own browser cookie. 
 
 Credit goes to the developers of [EdgeGPT](https://github.com/acheong08/EdgeGPT), who ingeniously reverse-engineered Bing Chat using browser cookies.
 
