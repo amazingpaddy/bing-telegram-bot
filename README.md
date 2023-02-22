@@ -27,6 +27,7 @@ Clone or download this code to a any directory.
 install EdgeGPT package
 
 **`python3 -m pip install EdgeGPT --upgrade`**
+**`pip install pyTelegramBotAPI`**
 ### step 3:
 install [Cookie Editor](https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm) extension in Edge browser.
 
