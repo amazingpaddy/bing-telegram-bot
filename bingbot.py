@@ -14,6 +14,7 @@ authorized_id = ['<INSERT YOUR TELEGRAM USER NAME, NOT THE DISPLAY NAME>']
 
 
 async def bingChat(prompt, is_ref=False):
+    # Update your cookies.json path here
     gbot = Chatbot(cookiePath='./cookies.json')
     response_dict = await gbot.ask(prompt=prompt)
     if is_ref:
