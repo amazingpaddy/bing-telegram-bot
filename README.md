@@ -10,7 +10,6 @@ Credit goes to the developers of [EdgeGPT](https://github.com/acheong08/EdgeGPT)
 * Edge browser - As of now bing chat only works in Edge browser. But there are extensions available to enable the chat in other browser as well.
 
 ## What is working and not working
-* No limits in how many requests you send. You can chat with bing as long as you want.
 * option to choose to get response with or without reference links.
 * **bot cannot remember the previous conversations, so you may not get proper response for the follow up questions.**
 * if you get `IndexOutofBoundException`, restart your python script. If is still not working, export the cookies again and update the cookie.json file.
